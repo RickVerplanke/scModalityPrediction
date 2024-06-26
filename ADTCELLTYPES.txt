@@ -1,0 +1,43 @@
+marker_prots = {
+    
+    'CD14+ Mono': ['CD14', 'CD11b', 'CD62P'],
+    'CD16+ Mono': ['CD11c', 'CD172a', 'CD88', 'CD85j'],
+    'cDC2': ['CD11c',  'CD1c', 'FceRIa'],
+    'pDCs': ['CD303', 'CD304'], 
+    
+    #Ery linage
+    'Proerythroblast': ['CD105'],
+    'Erythroblast': ['CD82', 'CD71'], # CD82 also in B
+    'Normoblast/Reticulocyte': ['CD71'], 
+    #'Reticulocyte': ['CD71'],  
+
+    # B linage
+    'Naive CD20+ B': ['IgD'],
+    'B1 B': ['CD40', 'CD35', 'CD268', 'IgD'], # (IgD- !)
+    'Transitional B': ['CD38', 'CD24'], # 'CD24', 'CD81', 'CD9'
+    'Plasma cells': ['CD63', 'CD319'], 
+    'Plasmablast': ['CD39', 'CD319'], # CD86
+
+    # T linage
+    'CD4+ T activated': ['CD4', 'CD45RO', 'CD25'], # CD25 negative, since these should be T regs
+    'Treg':['CD25', 'CD39'],
+    'CD4+ T naive': ['CD4', 'CD45RA'],
+    
+    'CD8+ T activated TIGIT+': ['CD8', 'CD45RO', 'TIGIT'],
+    'CD8+ T activated CD69+': ['CD8', 'CD45RO', 'CD69'],
+    'CD8+ T naive': ['CD8', 'CD45RA'],
+
+    'gdT':['TCRVd2', 'CD161'],
+    
+    'NKT': ['TCRVa7.2'], #not 100% sure
+
+    'NK': ['CD56', 'CD94', 'CD335'],  # 'CD57'?
+    
+    # Progenitors
+    'ILC': ['CD127', 'CD103'], # CD103? also mentioned as Treg
+    'MK/E prog':['CD112', 'CD105', 'CD352'],
+    'HSC': ['CD13', 'CD155', 'CD112'],
+    'Lymph prog':['CD112', 'CD81'], # close to HSC
+    'G/M prog':['CD112', 'CD86']
+
+}
