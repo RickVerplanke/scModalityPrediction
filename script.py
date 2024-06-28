@@ -145,7 +145,6 @@ hidden_dim = 256
 
 # Choose model
 #model = MLP(input_dim, output_dim, min_val, max_val)
-#model = TransformerModel(input_dim, output_dim, min_val, max_val)
 model = EncoderDecoderLSTM(input_dim, hidden_dim, output_dim, min_val, max_val)
 
 # Loss and optimizer
